@@ -7,10 +7,11 @@
 ## Tecnologías
 `Python` | `Pandas` | `SQLite (SQL Nativo)` | `Jupyter Notebook`
 
-##  Procesoe 
-* **Pandas:** Ingesta y normalización de variables numéricas y marcas temporales en memoria RAM.
-* **SQLite:** Automatiza la migración de los DataFrames hacia un motor relacional en disco (`.db`).
-* **SQL Pure:** Ejecuta un `INNER JOIN` con `GROUP BY` para extraer un reporte comercial ordenado por volumen de productos y cálculo automático de ticket promedio federal.
+## Arquitectura de Datos y Estrategia
+
+- **Ingesta y Normalización (Python & Pandas):** Desarrollé un pipeline automatizado para la consolidación de fuentes de datos fragmentadas (registros históricos transaccionales y maestros de clientes). El flujo realiza la limpieza, el casteo de variables numéricas y la estandarización de marcas temporales de forma eficiente.
+- **Persistencia Relacional (SQLite):** Diseñé el modelo de datos e implementé la migración y persistencia automatizada de las estructuras normalizadas hacia un motor relacional en disco (`.db`).
+- **Auditoría Comercial (SQL):** Creé consultas analíticas complejas utilizando integraciones relacionales avanzadas (`INNER JOIN`, `GROUP BY` y funciones de agregación) para consolidar un reporte comercial operativo automatizado, calculando métricas de facturación y el ticket promedio federal.
 
 ##  Estructura
 * `data/` (Contiene archivos origen .csv y base de datos relacional .db)
